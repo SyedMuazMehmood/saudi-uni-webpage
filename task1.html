@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesom link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My First Web Page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    .nav-top {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #d85f09;
+    }
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav a:hover {
+        background-color:white(182, 24, 24);
+        color:black;
+    }
+
+    .topnav a.active {
+        /* background-color: #4CAF50; */
+        /* color: white; */
+    }
+    .grey-box{
+        background-color:#e4dddd;
+        padding: 1px
+    }
+    .color{
+        background-color:white;
+        color: #d85f09;
+    }
+    .General-Information{
+        background-color:#e4dddd;
+        color: #d85f09;      
+    }
+    .grey{
+        background-color: #e4dddd;
+        color: grey;
+    }
+    .title{
+       
+        margin-bottom: 50px;
+        margin-left:103px; 
+      
+    }
+    .full-name{
+        margin-bottom: 50px;
+        margin-left:65px; 
+    }
+    .date-of-birth{
+        margin-bottom: 50px;
+        margin-left:46px;
+    }
+    .gender{
+        margin-bottom: 50px;
+        margin-left:83px;
+    }
+    .nominated{
+        margin-bottom: 50px;
+        margin-left:39px; 
+    }
+    .personal-div{
+        padding-right: 8px;
+    }
+    .footer{
+        background:rgb(0, 153, 255);
+        color: white
+    }
+    /* .wrapper-progressBar {
+    width: 100%
+}
+
+.progressBar {
+}
+
+.progressBar li {
+    list-style-type: none;
+    float: left;
+    width: 33%;
+    position: relative;
+    text-align: center;
+}
+
+.progressBar li:before {
+    content: " ";
+    line-height: 30px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px;
+    background-color: white
+}
+
+.progressBar li:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+
+.progressBar li:first-child:after {
+    content: none;
+}
+
+.progressBar li.active {
+    color: dodgerblue;
+}
+
+.progressBar li.active:before {
+    border-color: dodgerblue;
+    background-color: dodgerblue
+}
+
+.progressBar li.active + li:after {
+    background-color: dodgerblue;
+} */
+</style>
+
+<body class="container-fluid">
+    <div class="nav-top">
+        <div>
+            <img style=" width:200px" src="./Assets/logo-01.jpg" alt="">
+        </div>
+        <div>
+            <img style=" width:50px " src="./Assets/logo-02.jpg" alt="">
+        </div>
+    </div>
+    <div class="topnav">
+        <a class="active" href="#about-us">ABOUT US</a>
+        <a href="#experiment">EXPERIMENT</a>
+        <a href="#enable">ENABLE</a>
+        <a href="#enrich">ENRICH</a>
+        <a href="#blog">BLOG</a>
+        <a href="#contact-us">CONTACT US</a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+    </div>
+    <div>
+        <div>
+            <div style="display:block">
+                <img style="width: 100%" src="./Assets/banner.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div style="display:flex">
+        <div style="width:70%">
+            <!-- <div class="stepper-div">
+                <div class="row">
+                    <div class="col-xs-12 col-md-8 offset-md-2 block border">
+                        <div class="wrapper-progressBar">
+                            <ul class="progressBar">
+                                <li class="active">Beong Processed</li>
+                                <li class="active">Waiting for payment</li>
+                                <li>Paid</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="personal-div">
+                <div>
+                    <h3>Personal Details</h3>
+                    <hr>
+                </div>
+                <div class="grey-box">
+                    <p>* Manditory Fields</p>
+                </div>
+                <div class="color">
+                    <div style=" display: flex;">
+                        <label for="title">Title *: </label>
+                        <div class="title">
+                            <input style="width:400px;padding: 10px 10px 10px 10px;" type="text" placeholder="MR">
+                        </div>
+
+
+                    </div>
+                    <div style="display:flex">
+                        <label for="Full-Name ">Full Name *:</label>
+                        <div class="full-name">
+                            <input style="width:400px;padding: 10px 10px 10px 10px;" type="text" placeholder="Enter full name here">
+                        </div>
+                    </div>
+                    <div style="display:flex">
+                        <label for="Date-Of-Birth ">Date Of Birth *:</label>
+                        <div class="date-of-birth">
+                            <input style="width:400px;padding: 10px 10px 10px 10px;" type="text" placeholder="19/02/1989">
+                        </div>
+                    </div>
+                    <div style="display:flex">
+                        <label for="Gender ">Gender *:</label>
+                        <div class="gender">
+                            <input style="width:400px;padding: 10px 10px 10px 10px;" type="text" placeholder="Select Gender">
+                        </div>
+                    </div>
+                    <div style="display:flex">
+                        <label for="Nominated-by ">Nominated by *:</label>
+                        <div class="nominated">
+                            <input style="width:400px;padding: 10px 10px 10px 10px;" type="text" placeholder="Select Nomination">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <hr>
+                <div>
+                    <button style="float:right;width: 120px;padding: 10px;background-color: rgb(255, 102, 0);margin-right:10px "
+                        type="submit">Next </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div style="width:30%;padding: 5px;">
+            <div style="padding: 10px" class="General-Information">
+                <div>
+                    <h2>
+                        General Information
+                        <hr>
+                    </h2>
+                </div>
+                <div class="grey">
+                    <p>
+                        Please note that you need to obtain the below documents before billing the application.
+                    </p>
+                </div>
+                <div>
+                    <h4>
+                        *
+                        <!-- <br> -->
+                        Upload Resume
+                    </h4>
+                    <!-- <h4>
+                        Upload Resume
+                    </h4> -->
+                    <input type="text" id="Upload-Resume" name="Upload Resume">
+                </div>
+                <div>
+                    <h4>
+                        *
+                        <!-- <br> -->
+                    </h4>
+                    <h4>
+                        Upload Your Picture
+                    </h4>
+                    <input class="form-control" type="text" id="Upload-Your-Picture" name="Upload Your Picture">
+                </div>
+                <div>
+                    <h4>
+                        *
+                        <!-- <br> -->
+                    </h4>
+                    <h4>
+                        Upload UAE ID
+                    </h4>
+                    <input type="text" id="Upload-UAE-ID" name="Upload UAE ID">
+                </div>
+                <div>
+                    <h4>
+                        *
+                        <!-- <br> -->
+                    </h4>
+                    <h4>
+                        Upload Passport Copy
+                    </h4>
+                    <input type="text" id="Upload-Passport-Copy" name="Upload Passport Copy">
+                </div>
+                <div>
+                    <h4>
+                        *
+                        <!-- <br> -->
+                    </h4>
+                    <h4>
+                        Upload Education Certificate
+                    </h4>
+                    <input type="text" id="Upload-Education-Certificate" name="Upload Education Certificate">
+                </div>
+                <div>
+                    <h4>
+                        *
+                        <!-- <br> -->
+                    </h4>
+                    <h4>
+                        Last 2 Appraisal Results
+                    </h4>
+                    <input type="text" id="Last-2-Appraisal-Results" name="Last 2 Appraisal Results">
+                </div>
+                <div class="grey">
+                    <p>Dear User, now that you have uploaded the above documents, kindly fill in the form on the right
+                        to continue. </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div style="padding: 10px;" class="footer">
+        <div>
+            <div style="display:flex">
+                <div>
+                    <img style=" width:200px" src="./Assets/logo-01.jpg" alt="">
+                </div>
+                <div style="margin-left:10px">
+                    <p>
+                        PO BOX:21200
+
+                    </p>
+                    <p>
+                        DUBAI,UNITED ARAB EMIRATES
+                    </p>
+                </div>
+                <div style="margin-left:30px;">
+                    <p>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        971001234567
+                    </p>
+                    <p>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        971001234567
+                    </p>
+                </div>
+                <div style="margin-left:30px; ">
+                    <p>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </p>
+                    <p>
+                        saud.akhter@systemltd.com
+                    </p>
+                    <p>
+                        LOCATION
+                    </p>
+                </div>
+
+            </div>
+            <hr>
+            <div style="display:flex">
+
+
+                <div>
+                    <p>
+                        2016 Mohammad Bin Rashid Center for Government Innovation
+                    </p>
+
+                    <p>
+                        Privacy Policy | Terms And Conditions
+                    </p>
+                </div>
+                <p style="margin-left:200px;">
+                    FOLLOW US
+                    <a style="margin-left:10px;" href="#" class="fa fa-facebook"></a>
+                    <a style="margin-left:10px;" href="#" class="fa fa-twitter"></a>
+                    <a style="margin-left:10px;" href="#" class="fa fa-instagram"></a>
+                    <a style="margin-left:10px;" href="#" class="fa fa-youtube"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
